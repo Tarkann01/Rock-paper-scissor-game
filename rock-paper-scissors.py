@@ -1,16 +1,17 @@
-#-------------------------------------------------------------------------------
-# Name:        Rock-paper-scissors
-# Purpose:
-#
-# Author:      teiga
-#
-# Created:     02/10/2024
-# Copyright:   (c) teiga 2024
-# Licence:     <your licence>
-#-------------------------------------------------------------------------------
+import math
+import random
 
-def main():
-    pass
+def RockPaperSiser(X):
+    # we nead to have the user pick one and then the computer pick one
+    user = ""
+    num = math.ranint(1,3)
+    # geting the rock paper or siser
+    
+    
+    
 
-if __name__ == '__main__':
-    main()
+    
+
+
+
+
