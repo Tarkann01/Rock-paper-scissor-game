@@ -1,5 +1,16 @@
 import math
 import random
+userScore = 0
+compScroe = 0 
+
+def replayGame():
+    while userScore != 10 or compScroe != 10:
+        RockPaperSiser(UserInp())
+    if userScore == 10:
+        print("You won with a score of " + userScore + "to " + compScroe)
+    else:
+        print("You lost with a score of " + userScore + "to " + compScroe)
+
 
 def RockPaperSiser(x):
     # we nead to have the user pick one and then the computer pick one
@@ -13,7 +24,7 @@ def RockPaperSiser(x):
     # x is the user
     if num == x:
         return("you chose the same as the computer")
-        RockPaperSiser(userInp())
+        #RockPaperSiser(userInp())
     elif num == 1 and x == 3:
         return("The computer won beter luck next time")
     elif num == 2 and x == 1:
@@ -27,7 +38,7 @@ def RockPaperSiser(x):
     elif x == 3 and  num == 2:
         return("Congrats you won!!")
 
-def userInp():
+def UserInp():
     #Prints the three user options
     print("1. Rock")
     print("2. Paper")
@@ -36,7 +47,5 @@ def userInp():
     userChoice = int(input("What is your choice?"))
     #Returns the users choice as an int
     return userChoice
-
-
 
 
