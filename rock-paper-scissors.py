@@ -3,7 +3,7 @@ import random
 userScore = 0
 compScroe = 0 
 
-def replayGame():
+def ReplayGame():
     while userScore != 10 or compScroe != 10:
         RockPaperSiser(UserInp())
     if userScore == 10:
