@@ -1,5 +1,16 @@
 import math
 import random
+userScore = 0
+compScroe = 0 
+
+def ReplayGame():
+    while userScore != 10 or compScroe != 10:
+        RockPaperSiser(UserInp())
+    if userScore == 10:
+        print("You won with a score of " + userScore + "to " + compScroe)
+    else:
+        print("You lost with a score of " + userScore + "to " + compScroe)
+
 
 userScore = 0
 compScore = 0
@@ -47,7 +58,5 @@ def UserInp():
     userChoice = int(input("What is your choice?"))
     #Returns the users choice as an int
     return userChoice
-
-
 
 
