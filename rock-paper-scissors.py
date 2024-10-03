@@ -6,9 +6,16 @@ def RockPaperSiser(x):
     user = x
     num = random.randint(1,3)
     # geting the rock paper or siser
+    # rock is 3
+    # siser is 2
+    # paper is 1
+    # num is the computer 
+    # x is the user
     if num == x:
         return("you chose the same as the computer")
         RockPaperSiser(userInp())
+    elif num == 1 and x == 3:
+        return("The computer won beter luck next time")
 
 def userInp():
     #Prints the three user options
