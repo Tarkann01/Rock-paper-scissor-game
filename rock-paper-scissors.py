@@ -16,7 +16,7 @@ def RockPaperSiser(x):
     # x is the user
     if num == x:
         print("you chose the same as the computer")
-        RockPaperSiser(userInp())
+        #RockPaperSiser(userInp())
     elif num == 1 and x == 3:
         compScore += 1
         print("The computer won beter luck next time")
@@ -38,7 +38,7 @@ def RockPaperSiser(x):
     print("User:",userScore)
     print("Computer:",compScore)
 
-def userInp():
+def UserInp():
     #Prints the three user options
     print("1. Rock")
     print("2. Paper")
