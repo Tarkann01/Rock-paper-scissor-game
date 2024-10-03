@@ -1,17 +1,23 @@
 import math
 import random
 
-def RockPaperSiser(X):
+def RockPaperSiser(x):
     # we nead to have the user pick one and then the computer pick one
-    user = ""
-    num = math.ranint(1,3)
+    user = x
+    num = random.randint(1,3)
     # geting the rock paper or siser
+    if num == x:
+        return("you chose the same as the computer")
+        RockPaperSiser(userInp())
 
 def userInp():
+    #Prints the three user options
     print("1. Rock")
     print("2. Paper")
     print("3. Scissors")
+    #Gives prompt to user to choose one of the three choices
     userChoice = int(input("What is your choice?"))
+    #Returns the users choice as an int
     return userChoice
 
 
